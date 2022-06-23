@@ -1,0 +1,659 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #897DCB;
+}
+
+body {
+    background: #0c0e14;
+    margin: 0;
+    font-family: Open Sans, Helvetica, Arial, sans-serif
+}
+
+.navbar {
+    padding: 1em;
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.container {
+    display: flex;
+    place-content: space-between;
+}
+
+.mobile-menu {
+    cursor: pointer;
+}
+
+a {
+    color: #b5b8c1;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+
+
+section {
+    padding: 5em 2em;
+}
+
+.hero {
+    text-align: center;
+}
+
+.subhead {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: gray;
+    letter-spacing: .3em;
+}
+
+h1 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+    margin-top: .2em;
+}
+
+.primary-cta {
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: .5em 1.2em;
+    font-size: 0.8em;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    
+}
+
+.primary-ctaa {
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    padding: .5em 1.2em;
+    font-size: 0.8em;
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    display: flex;
+    margin: 100px 100px 30px 30px;
+}
+
+.watch-video-cta {
+    display: block;
+    margin-top: 1em;
+}
+
+img {
+    margin-right: .5em;
+}
+
+.logo-person {
+    width: 5em;
+    height: 5em;
+    border: 5px solid #006BD6;
+    border-radius: 50%;
+    margin-top: -4.5em;
+}
+
+.hero-img {
+    width: 70%;
+    margin-top: 3em;
+}
+
+section#modules {
+    background: #11141c;
+    color: white;
+}
+
+.naast-elkaar {
+    margin-right: 15em;
+    margin-top: 10.5em;
+}
+
+.naast-elkaar h2 {
+    margin: 0;
+    color: #fff;
+    width: 600px;
+}
+
+.models-img {
+    display: inline
+}
+
+.alleen-dit {
+    width: 20%;
+}
+
+.naast-elkaar p {
+    margin: 1.5em 0;
+    color: #747c94;
+    width: 400px;
+}
+
+.link-p {
+    color: #678aff;
+}
+
+
+ul.features-list {
+    margin: 0;
+    padding-left: .1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+
+li {
+    font-size: 1.1em;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    position: relative;
+}
+
+.checkmarks:before {
+    content: '';
+    left: -2em;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://assets.codepen.io/2621168/bullet.svg');
+    background-size: contain;
+    margin-right: .5em;
+}
+
+.blue-border {
+    background: #006BD6;
+    text-align: center;
+    padding: 2em 1em;
+    width: 80%;
+    border-radius: 1em;
+}
+
+.features-section img {
+    display: none;
+}
+
+.testimonials-section {
+    background: var(--primary-color);
+    color: white;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fff;
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: .5em;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: .8em;
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid gray;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.3em;
+    border: none;
+    margin-bottom: 5em;
+    border-radius: 5em;
+    display: inline-block;
+    padding: .8em 2em;
+    width: unset;
+    cursor: pointer;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+}
+
+nav.menu-btn {
+    display: block;
+}
+
+
+ul.primary-nav {
+    margin-top: 5em;
+}
+
+.mobile-menu-exit {
+    float: right;
+    margin: .5em;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .mobile-menu,
+    .mobile-menu-exit {
+        display: none;
+    }
+
+    .navbar .container {
+        display: grid;
+        grid-template-columns: 180px auto;
+        justify-content: unset;
+    }
+
+    .navbar nav {
+        display: flex;
+        justify-content: space-between;
+        background: none;
+        position: unset;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    ul {
+        display: flex;
+    }
+
+    ul.primary-nav {
+        margin: 0;
+    }
+
+    li.current a {
+        font-weight: bold;
+    }
+
+    .grijze-button {
+        background-color: #1a1e2b;
+    }
+
+    ul.go-premium-cta a {
+        color: var(--primary-color);
+        background: var(--primary-color);
+        border-radius: 5px;
+        padding: .5em 1.2em;
+        color: #0c0e14;
+        font-size: 0.8em;
+        width: 80px;
+        height: 20px;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        font-size: 15px;
+    }
+
+    ul.right-nav a {
+        color: var(--primary-color);
+        border-radius: 5px;
+        padding: .5em .2em;
+        color: white;
+        font-size: 0.8em;
+        width: 80px;
+        height: 20px;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+        font-size: 15px;
+    }
+
+    .dashboard-col h2 {
+        margin-top: 0;
+        color: #fff;
+        width: 395px;
+    }
+
+    .dashboard-col p {
+        margin: 2em 0;
+        color: #747c94;
+        width: 400px;
+        font-size: 1em;
+    }
+
+    .dashboard-cta {
+        background: var(--primary-color);
+        color: white;
+        text-decoration: none;
+        padding: .5em 1.2em;
+        font-size: 0.8em;
+        border-radius: 5px;
+        width: 150px;
+        height: 25px;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        display: flex;
+    }
+
+    .dashboard-icon {
+        width: 45px;
+        height: 45px;
+        margin-top: 8em;
+    }
+
+    .boxes {
+        display: flex;
+        background: #191c24;
+        border-radius: 8px;
+    }
+
+    .box {
+        flex: 1;
+        padding: 40px 40px;
+        color: white;
+        margin: auto;
+        width: 50%;
+    }
+
+    .box img {
+        width: 45px;
+        height: 45px;
+        margin-bottom: -20px;
+    }
+
+    .box h2 {
+        font-size: 24px;
+    }
+
+    .box p {
+        font-size: 15px;
+        color: #b5b8c1;
+    }
+
+    .naast-elkaar .blauw {
+        color: #678aff;
+        font-weight: bold;
+
+    }
+
+    .card-container {
+        width: 1500px;
+        margin: 0 auto;
+
+    }
+
+    .dashboard-container {
+        padding: 6em 4em;
+    }
+
+    .cards {
+        padding-top: 0;
+    }
+
+    @media only screen and (min-width: 1080px) {
+        .container {
+            width: 1500px;
+            margin: 0 auto;
+
+        }
+    }
+
+    section {
+        padding: 10em 4em;
+    }
+
+    .hero .container {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .left-col h1 {
+        margin: 0;
+        color: #fff;
+        width: 400px;
+    }
+
+    .left-col p {
+        margin: 2em 0;
+        color: #fff;
+        width: 550px;
+        font-size: 1.2em;
+    }
+
+    h1 {
+        font-size: 3em;
+        width: 90%;
+    }
+
+    #modules img {
+        width: 35%;
+    }
+
+    .hero-img {
+        width: 50%;
+        margin-top: -100px;
+        margin-right: 0;
+    }
+
+    .hero-cta {
+        display: flex;
+    }
+
+    .primary-cta {
+        margin-right: 1em;
+    }
+
+    ul.features-list {
+        display: block;
+        margin-left: 5em;
+    }
+
+    .features-section {
+        position: relative;
+    }
+
+    .features-section img {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 350px;
+        bottom: -2em;
+    }
+
+    .testimonials-section ul {
+        display: flex;
+    }
+
+    li {
+        margin: 0 1em;
+    }
+
+    .contact-section {
+        position: relative;
+    }
+
+    .container {
+        display: flex;
+    }
+
+    .contact-right {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 45%;
+        height: 100%;
+    }
+
+    iframe {
+        height: 100%;
+    }
+
+
+    .nav {
+        position: relative;
+        z-index: 10;
+    }
+
+    .nav>.content {
+        display: flex;
+        max-width: 100%;
+        width: 1500px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    a {
+        font-weight: bold;
+    }
+
+    .nav .brand,
+    .nav a.brand,
+    .nav a.brand:active,
+    .nav a.brand:hover {
+        display: inline-flex;
+        align-items: center;
+        font-weight: 500;
+        color: #fff;
+        text-decoration: none;
+        margin-right: 1rem;
+        font-weight: bold;
+        font-size: 25px;
+    }
+
+    .nav .left {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav .brand .logo,
+    .nav a.brand .logo,
+    .nav a.brand:active .logo,
+    .nav a.brand:hover .logo {
+        display: inline-block;
+        color: #ef5e86;
+        width: 1.7rem;
+        margin-right: 1rem;
+    }
+
+    .nav>.content>.left {
+        flex: 1;
+    }
+
+    nav img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav .left>a {
+        padding: .5rem .7rem;
+    }
+
+    @media only screen and (min-width: 1450px) {
+        .features-section:before {
+            content: '';
+            position: absolute;
+            width: 10%;
+            height: 20em;
+            background: var(--primary-color);
+            left: 0;
+            top: -4em;
+        }
+
+        .features-section:after {
+            content: '';
+            position: absolute;
+            width: 200px;
+            height: 20em;
+            background: url('https://assets.codepen.io/2621168/dots.svg') no-repeat;
+            left: 4.5em;
+            top: 2em;
+        }
+    }
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+.cardss {
+    width: 20%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+    margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the counter cards */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* this adds the "card" effect */
+    padding: 16px;
+    text-align: center;
+    background-color: #897DCB;
+    border-radius: 5px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+.kaart {
+    margin-left: 15em;
+}
+
+.card h3, p {
+    color: rgb(239, 239, 239);
+}
